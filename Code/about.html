@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <title>About SpaceX</title>
+</head>
+<body>
+
+    <header class="mainpageheader"></header>
+
+    <div class="navcontainer">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mars.html">Mars Mission</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="abouttextsection">
+        <h1>About SpaceX</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe id officia iste sint beatae quis obcaecati quia hic quas iusto.</p>
+    </div>
+<div class="contactfieldcontent">
+    <div class="container">
+
+        <form id="form" class="contactform">         
+            <select id="region" name="region">
+                <option value="blank">Select Region..</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <!-- <option value="thecaribbean">The Caribbean</option> -->
+                <!-- <option value="centralamerica">Central America</option> -->
+                <option value="europe">Europe</option>
+                <option value="northamerica">North America</option>
+                <option value="oceania">Oceania</option>
+                <option value="southamerica">South America</option>
+            </select>
+           <label for="region">*This is optional but we would love to hear which part of the world you live in</label>
+
+            <!-- FIRST NAME CONTACT FORM -->
+            <!-- <label for="firstname">First Name</label> -->
+            <div class="form-error" id="firstNameError">Please enter your first name</div>
+            <input type="text" id="firstname" name="fname" placeholder="Please enter your first name..">
+
+            <!-- EMAIL CONTACT FORM -->
+            <!-- <label for="emailaddress">Email Address</label> -->
+            <div class="form-error" id="emailError">Please enter your email address</div>
+            <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
+            <input type="text" id="emailaddress" name="email" placeholder="And your email address..">
+
+            <!-- MESSAGE CONTACT FORM -->
+            <!-- <label for="message">Message</label> -->
+            <div class="form-error" id="messageError">The message must be atleast 8 characters.</div>
+            <textarea id="message" name="message" placeholder="Do you have any questions, feedback or concerns? We would love to hear it!"></textarea>
+            <input type="submit" class="submitbutton" value="Send">
+            <button type="submit" class="submittbutton" id="submit">Send</button>
+        </form>
+
+    </div>
+</div>
+<script src="/js/about.js"></script>
+</body>
+</html>
