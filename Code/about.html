@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>About SpaceX</title>
 </head>
+
 <body>
 
     <header class="mainpageheader"></header>
@@ -13,10 +16,10 @@
     <div class="navcontainer">
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mars.html">Mars Mission</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li class="marsnav"><a href="mars.html">Mars Mission</a></li>
                 <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a class="currentPage" href="about.html">About</a></li>
             </ul>
         </nav>
     </div>
@@ -26,10 +29,18 @@
             <h1>About SpaceX</h1>
         </div>
         <div class="aboutTextBody">
-            <p>SpaceX is a private company founded in 2002 by Elon Musk to revolutionise <br> space technology, with the ultimate goal of enabling people to live on other planets.</p>
+            <p>SpaceX is a private company founded in 2002 by Elon Musk to revolutionise <br> space technology, with the
+                ultimate goal of enabling people to live on other planets.</p>
             <hr>
-            <p>As one of the world’s fastest growing providers of launch services, SpaceX has secured over 100 missions to its manifest, representing over $12 billion on contract. These include commercial satellite launches as well as US government missions. SpaceX’s Dragon spacecraft is flying numerous cargo resupply missions to the space station under a series of Commercial Resupply Services contracts. Dragon was designed from the outset to carry humans to space and will soon fly astronauts under NASA’s Commercial Crew Program.</p>
-            <p>Building on the achievements of Falcon 9 and Falcon Heavy, SpaceX is working on a next generation of fully reusable launch vehicles that will be the most powerful ever built, capable of carrying humans to Mars and other destinations in the solar system.</p>
+            <p>As one of the world’s fastest growing providers of launch services, SpaceX has secured over 100 missions
+                to its manifest, representing over $12 billion on contract. These include commercial satellite launches
+                as well as US government missions. SpaceX’s Dragon spacecraft is flying numerous cargo resupply missions
+                to the space station under a series of Commercial Resupply Services contracts. Dragon was designed from
+                the outset to carry humans to space and will soon fly astronauts under NASA’s Commercial Crew Program.
+            </p>
+            <p>Building on the achievements of Falcon 9 and Falcon Heavy, SpaceX is working on a next generation of
+                fully reusable launch vehicles that will be the most powerful ever built, capable of carrying humans to
+                Mars and other destinations in the solar system.</p>
             <hr>
             <div class="aboutTextTitle">
                 <h1>Contact Form</h1>
@@ -39,43 +50,45 @@
     </div>
 
 
-<div class="contactfieldcontent">
-    <div class="container">
-        <form id="form" class="contactform">         
-            <select id="region" name="region">
-                <option value="blank">Select Region..</option>
-                <option value="africa">Africa</option>
-                <option value="asia">Asia</option>
-                <!-- <option value="thecaribbean">The Caribbean</option> -->
-                <!-- <option value="centralamerica">Central America</option> -->
-                <option value="europe">Europe</option>
-                <option value="northamerica">North America</option>
-                <option value="oceania">Oceania</option>
-                <option value="southamerica">South America</option>
-            </select>
-           <label for="region"></label>
+    <div class="contactfieldcontent">
+        <div class="container">
+            <form id="form" class="contactform">
+                <select id="region" name="region">
+                    <option value="blank">Select Region..</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <!-- <option value="thecaribbean">The Caribbean</option> -->
+                    <!-- <option value="centralamerica">Central America</option> -->
+                    <option value="europe">Europe</option>
+                    <option value="northamerica">North America</option>
+                    <option value="oceania">Oceania</option>
+                    <option value="southamerica">South America</option>
+                </select>
+                <label for="region"></label>
 
-            <!-- FIRST NAME CONTACT FORM -->
-            <!-- <label for="firstname">First Name</label> -->
-            <div class="form-error" id="firstNameError">Please enter your first name</div>
-            <input type="text" id="firstname" name="fname" placeholder="Please enter your first name..">
+                <!-- FIRST NAME CONTACT FORM -->
+                <!-- <label for="firstname">First Name</label> -->
+                <div class="form-error" id="firstNameError">Please enter your first name</div>
+                <input type="text" id="firstname" name="fname" placeholder="Please enter your first name..">
 
-            <!-- EMAIL CONTACT FORM -->
-            <!-- <label for="emailaddress">Email Address</label> -->
-            <div class="form-error" id="emailError">Please enter your email address</div>
-            <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
-            <input type="text" id="emailaddress" name="email" placeholder="And your email address..">
+                <!-- EMAIL CONTACT FORM -->
+                <!-- <label for="emailaddress">Email Address</label> -->
+                <div class="form-error" id="emailError">Please enter your email address</div>
+                <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
+                <input type="text" id="emailaddress" name="email" placeholder="And your email address..">
 
-            <!-- MESSAGE CONTACT FORM -->
-            <!-- <label for="message">Message</label> -->
-            <div class="form-error" id="messageError">Your message must be at least 10 characters long</div>
-            <textarea id="message" name="message" placeholder="Do you have any questions, feedback or concerns? We would love to hear it!"></textarea>
-            <input type="submit" class="submitbutton" value="Send">
-            <!-- <button type="submit" class="submittbutton" id="submit">Send</button> -->
-        </form>
+                <!-- MESSAGE CONTACT FORM -->
+                <!-- <label for="message">Message</label> -->
+                <div class="form-error" id="messageError">Your message must be at least 10 characters long</div>
+                <textarea id="message" name="message"
+                    placeholder="Do you have any questions, feedback or concerns? We would love to hear it!"></textarea>
+                <input type="submit" class="submitbutton" value="Send">
+                <!-- <button type="submit" class="submittbutton" id="submit">Send</button> -->
+            </form>
+        </div>
     </div>
-</div>
 
-<script src="/js/about.js"></script>
+    <script src="/js/about.js"></script>
 </body>
+
 </html>

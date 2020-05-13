@@ -7,40 +7,6 @@ body {
     font-family: geosans;
 }
 
-/* NAVBAR */
-.navbar{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 60px;
-}
-
-.navbar ul{
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 3rem;
-    padding: 16px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-family: advent;
-    letter-spacing: 3.5px;
-    font-weight: bold;
-}
-
-.navbar ul li a:hover {
-    color: #0071BC;
-}
 
 /* FONTS */
 @font-face {
@@ -78,12 +44,12 @@ body {
 
 
 /* CONTACT FORM BELOW */
-.contactfieldcontent{
-box-sizing: border-box;
-margin: auto;
-width: 35%;
-padding: 10px;
-height: auto;
+.contactfieldcontent {
+    box-sizing: border-box;
+    margin: auto;
+    width: 35%;
+    padding: 10px;
+    height: auto;
 
 
 }
@@ -98,26 +64,40 @@ label {
 
 .container {
     border-radius: 4px;
-    background-color: #e9e9e9; /* BACKGROUND COLOR CONCACT FORM */
+    background-color: #e9e9e9;
+    /* BACKGROUND COLOR CONCACT FORM */
     /* animation: pulse 20s infinite; ----- IF EFFECT ON BACKGROUND COLOR CONTACT FORM */
     padding: 20px;
     height: auto;
-    border-top: 4px solid  #5e5e5e;
+    border-top: 4px solid #5e5e5e;
     border-left: 8px solid #999999;
     border-bottom: 0px solid #999999;
-    
+
 }
 
 @keyframes pulse {
-    0% {background-color: #e4e4e4;}
-    40% {background-color: #c076c0;}
-    80% {background-color: #6ec0ac;}
-    100% {background-color: #e4e4e4;}
+    0% {
+        background-color: #e4e4e4;
+    }
+
+    40% {
+        background-color: #c076c0;
+    }
+
+    80% {
+        background-color: #6ec0ac;
+    }
+
+    100% {
+        background-color: #e4e4e4;
+    }
 }
 
 
 /* Style inputs */
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 90%;
     padding: 24px;
     background-color: #040811;
@@ -135,15 +115,15 @@ input[type=text], select, textarea {
 }
 
 
-  /* BUTTON */
-  .submitbutton {
+/* BUTTON */
+.submitbutton {
     display: block;
     float: center;
     font-size: 18px;
 
 }
 
-  input[type=submit] {
+input[type=submit] {
     background-color: #040811;
     color: #808080;
     padding: 24px 88px;
@@ -153,14 +133,14 @@ input[type=text], select, textarea {
     border-left: 0px solid;
     border-top: 0px solid;
     border-right: 6px solid #5e5e5e;
-    border-bottom: 4px solid #999999; 
-    
-  }
-  
-  input[type=submit]:hover {
+    border-bottom: 4px solid #999999;
+
+}
+
+input[type=submit]:hover {
     background-color: #488838;
     color: whitesmoke;
-  }
+}
 
 
 
@@ -168,7 +148,7 @@ input[type=text], select, textarea {
     width: 35%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    border-radius: 4px;  
+    border-radius: 4px;
     border-left: 0px solid;
     border-top: 0px solid;
     border-right: 7px solid #5e5e5e;
@@ -176,28 +156,29 @@ input[type=text], select, textarea {
 }
 
 
-#emailaddress, #firstname {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      border-radius: 4px; 
-      border-left: 0px solid;
-      border-top: 0px solid;
-      border-right: 7px solid #5e5e5e;
-      border-bottom: 5px solid #999999; 
-    }
+#emailaddress,
+#firstname {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    border-left: 0px solid;
+    border-top: 0px solid;
+    border-right: 7px solid #5e5e5e;
+    border-bottom: 5px solid #999999;
+}
 
 /* MESSAGE BOX */
-#message{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        height: 100px;
-        border-radius: 4px;  
-        border-top: 0px solid;
-        border-right: 7px solid #5e5e5e;
-        border-bottom: 5px solid #999999;  
-    }
+#message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100px;
+    border-radius: 4px;
+    border-top: 0px solid;
+    border-right: 7px solid #5e5e5e;
+    border-bottom: 5px solid #999999;
+}
 
-.form-error{
+.form-error {
     color: #CE5A32;
     margin-top: 3px;
     font-size: 20px;

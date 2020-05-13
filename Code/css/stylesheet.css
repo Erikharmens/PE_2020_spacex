@@ -11,11 +11,6 @@ body {
 }
 
 
-
-.navbar .marsnav a:hover {
-    color: #CE5A32;
-}
-
 @font-face {
     font-family: 'advent';
     src: url(/fonts/advent-Re.otf);
@@ -38,20 +33,31 @@ body {
     /* padding-top: 30px;
     padding-bottom: 500px; */
     font-family: advent;
+
 }
 
 .countdowntimer .rockettimer {
     color: orange;
-    /* animation: pulse 5s infinite;  PULSATING COLORCHANGE ANIMATION */
     font-size: 28px;
     margin-top: 8px;
 }
 
 @keyframes pulse {
-    0% {color: rgb(64, 122, 197);}
-    40% {color: rgb(76, 162, 165);}
-    80% {color: rgb(82, 180, 95);}
-    100% {color: rgb(64, 122, 197);}
+    0% {
+        color: rgb(64, 122, 197);
+    }
+
+    40% {
+        color: rgb(76, 162, 165);
+    }
+
+    80% {
+        color: rgb(82, 180, 95);
+    }
+
+    100% {
+        color: rgb(64, 122, 197);
+    }
 }
 
 .countdowntimer h1 {
@@ -62,46 +68,8 @@ body {
 .countdowntimer h4 {
     margin: 0px;
     margin-top: 0.5em;
-    color: #efefef; /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
-}
-
-.navbar {
-    /* position: fixed;  <-- Stick to top when scolling */
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 76px;
-    /* TODO - Background nav color - find suitable dark color. transparent? BLACK? */
-    background-color: rgb(8, 8, 8);
-    /* background-color: rgba(0, 0, 0, 0.1); */
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 3rem;
-    padding: 16px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(24, 80, 117);
-    font-family: advent;
-    letter-spacing: 3.5px;
-    font-weight: bold;
-}
-
-.navbar ul li a:hover {
-    color: #0071BC;
-    text-decoration: underline;
-    /* font-size: 18px; */
+    color: #efefef;
+    /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
 
 }
 
@@ -112,6 +80,7 @@ body {
     color: #0071BC;
     text-decoration: none;
     /* animation: pulse 5s infinite;  PULSATING COLORCHANGE ANIMATION */
+    /* animation: pulse 5s infinite; */
 }
 
 .upcomingrocket h1 {
@@ -133,7 +102,8 @@ body {
 
 }
 
-.marsmission a, a :hover{
+.marsmission a,
+a :hover {
     text-decoration: none;
 }
 

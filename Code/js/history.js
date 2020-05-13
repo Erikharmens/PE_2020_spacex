@@ -20,10 +20,9 @@ fetch(historyUrl)
 
 
 
-            html += `
-                    <div class="historycards">
-                    <h2>${json[i].title}</h2>
-                        <p>${isoDateFixed}</p>
+            html += `<div class="historycards">
+                        <h2>${json[i].title}</h2>
+                        <div class="historyDate">${isoDateFixed}</div>
                         <p>${json[i].details}</p>
                     </div>`
 

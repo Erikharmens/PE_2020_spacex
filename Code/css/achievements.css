@@ -22,52 +22,6 @@ body {
 }
 
 
-
-/* ----- NAVBAR ----- */
-.navbar {
-    /* position: fixed;  <-- Stick to top when scolling */
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 76px;
-    /* TODO - Background nav color - find suitable dark color. transparent? BLACK? */
-    background-color: rgb(8, 8, 8);
-    /* background-color: rgba(0, 0, 0, 0.1); */
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 3rem;
-    padding: 16px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(24, 80, 117);
-    font-family: advent;
-    letter-spacing: 3.5px;
-    font-weight: bold;
-}
-
-.navbar ul li a:hover {
-    color: #0071BC;
-    text-decoration: underline;
-    /* font-size: 18px; */
-
-}
-
-.navbar .marsnav a:hover {
-    color: #CE5A32;
-}
-
 .historyTitle {
     text-align: center;
     padding-top: 50px;
@@ -80,7 +34,7 @@ body {
     /* text-align: center; */
     margin: auto;
     width: 40%;
-    margin-top: 100px;
+    margin-top: 6px;
     background-color: rgb(131, 211, 115) hidden;
     height: max-content;
     flex-wrap: wrap;
@@ -108,6 +62,12 @@ body {
 }
 
 .historycards p {
+    font-family: geosans;
+    font-weight: bold;
+}
+
+.historyDate {
+    color: green;
     font-family: geosans;
     font-weight: bold;
 }
