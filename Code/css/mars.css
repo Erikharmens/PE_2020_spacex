@@ -54,10 +54,16 @@ body {
     color: #CE5A32;
 }
 
+.marscontainer {
+    margin: 0;
+    width: 60%;
+}
+
 
 .marsmission {
     padding-top: 160px;
     padding-left: 80px;
+    width: 60%;
     /* color: #CE5A32; */
     color: whitesmoke;
     text-align: left;
@@ -78,6 +84,7 @@ body {
     padding-top: 64px;
     font-size: 36px;
     font-family: advent;
+    color: #CE5A32;
 }
 
 @font-face {

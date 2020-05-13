@@ -1,15 +1,16 @@
 body {
-    background-image: url(../images/earthmarsvol1.jpg);
+    background-image: url(../images/frontpage_new_12.05.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #040811;
     /* overflow: hidden; */
-    height: 2300px;
+    height: 100%;
     color: rgb(222, 222, 222);
-    margin: 0;
-    padding: 0;
+
 
 }
+
+
 
 .navbar .marsnav a:hover {
     color: #CE5A32;
@@ -29,14 +30,11 @@ body {
     font-weight: 100;
 }
 
-.mainpageheader {
-    text-align: center;
-    font-size: 16px;
-}
 
 .countdowntimer {
     text-align: center;
     font-size: 30px;
+    padding-top: 16px;
     /* padding-top: 30px;
     padding-bottom: 500px; */
     font-family: advent;
@@ -64,7 +62,7 @@ body {
 .countdowntimer h4 {
     margin: 0px;
     margin-top: 0.5em;
-    color: rgb(182, 182, 182); /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
+    color: #efefef; /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
 }
 
 .navbar {
@@ -125,43 +123,59 @@ body {
 
 
 .marsmission {
-
-    height: 50vh;
-    color: #CE5A32;
+    display: block;
     text-align: center;
-    font-family: geosans;
+    margin: auto;
+    width: 50%;
+    padding-top: 100px;
+    /* color: #efefef; */
+    color: #CE5A32;
+
 }
 
+.marsmission a, a :hover{
+    text-decoration: none;
+}
+
+.marsmissiontext {
+    font-family: geosans;
+    font-size: 24px;
+}
+
+
 .marsmission h5 {
-    margin: 40px;
-    font-size: 22px;
+    margin: 25px;
+    font-size: 24px;
 }
 
 .marsmission h1 {
     margin: 40px;
     font-size: 40px;
-    text-decoration: underline;
     font-family: advent;
     color: #CE5A32;
 }
 
-.buttontomars {
-    text-align: center;
+.marsmission hr {
+    border: 2px solid #CE5A32;
+    width: 65%;
 }
 
-.marsbutton {
-    position: center;
-    top: 50%;
-    color: white;
-    padding: 16px;
-    background-color: #0071BC;
-    border-radius: 30px;
-    box-shadow: 0px 10px 0px rgb(1, 75, 124);
+.buttontomars {
+    text-align: center;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
 }
+
+.buttontomars img {
+    width: 15%;
+}
+
 
 
 .topearth {
-    height: 160vh;
+    height: 1600px;
 
     float: center;
 }
