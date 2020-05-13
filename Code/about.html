@@ -73,14 +73,16 @@
 
                 <!-- EMAIL CONTACT FORM -->
                 <!-- <label for="emailaddress">Email Address</label> -->
+                <p>*Email required</p>
                 <div class="form-error" id="emailError">Please enter your email address</div>
                 <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
-                <input type="text" id="emailaddress" name="email" placeholder="And your email address..">
+                <input type="text" id="emailaddress" name="email" required placeholder="And your email address..">
 
                 <!-- MESSAGE CONTACT FORM -->
                 <!-- <label for="message">Message</label> -->
+                <p>*Message required</p>
                 <div class="form-error" id="messageError">Your message must be at least 10 characters long</div>
-                <textarea id="message" name="message"
+                <textarea id="message" name="message" required
                     placeholder="Do you have any questions, feedback or concerns? We would love to hear it!"></textarea>
                 <input type="submit" class="submitbutton" value="Send">
                 <!-- <button type="submit" class="submittbutton" id="submit">Send</button> -->

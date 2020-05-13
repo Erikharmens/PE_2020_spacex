@@ -45,13 +45,14 @@ body {
 
 /* ----- CARDS W INFO FROM API CALL ----- */
 .historycards {
-    background-color: #141516;
+    background-color: #dcdcdc;
     margin-top: 50px;
     margin-bottom: 15px;
     border-radius: 15px;
     border: 3px solid #efefef;
     padding: 30px;
-    color: #dadada;
+    color: #262626;
+    text-align: center;
 
 }
 
@@ -67,7 +68,8 @@ body {
 }
 
 .historyDate {
-    color: green;
+    color: #0071BC;
     font-family: geosans;
     font-weight: bold;
+    text-align: center;
 }

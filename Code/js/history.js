@@ -21,8 +21,8 @@ fetch(historyUrl)
 
 
             html += `<div class="historycards">
-                        <h2>${json[i].title}</h2>
                         <div class="historyDate">${isoDateFixed}</div>
+                        <h2>${json[i].title}</h2>
                         <p>${json[i].details}</p>
                     </div>`
 

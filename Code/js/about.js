@@ -1,5 +1,3 @@
-
-
 // Makes sure input value is greater than 0
 function checkInputValue(value) {
     const trimmedValue = value.trim();
@@ -31,14 +29,21 @@ function formValidation(event) {
 
     // FIRST NAME SECTION
     const firstName = document.querySelector("#firstname");
+    console.log("firstName: " + firstName);
     const firstNameError = document.querySelectorAll("#firstNameError");
+    console.log("firstNameError: " + firstNameError);
     const firstNameValue = firstName.value;
+    console.log("firstNameValue: " + firstNameValue);
 
     // EMAIL SECTION
     const email = document.querySelector("#emailaddress");
+    console.log("email: " + email);
     const emailError = document.querySelector("#emailError");
+    console.log("emailError: " + emailError);
     const emailInvalidError = document.querySelector("#invalidEmailError");
+    console.log("emailInvalidError: " + emailInvalidError);
     const emailValue = email.value;
+    console.log("emailValue: " + emailValue);
 
     // MESSAGE SECTION
     const message = document.querySelector("#message");
@@ -47,16 +52,20 @@ function formValidation(event) {
 
     // // Check input value for first name is > 0
     // if (checkInputValue(firstNameValue) === true) {
-    //       firstNameError.style.display = "none";
-    //  } else {
-    //       firstNameError.style.display = "block";
-    //  }
+    //     firstNameError.style.display = "none";
+    // } else {
+    //     firstNameError.style.display = "block";
+    // }
+
+    let hasTrueValues = true;
+
 
     // Check input value for email is > 0
     if (checkInputValue(emailValue) === true) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
+        hasTrueValues = false;
     }
 
     // Check
@@ -64,12 +73,14 @@ function formValidation(event) {
         emailInvalidError.style.display = "none";
     } else {
         emailInvalidError.style.display = "block";
+        hasTrueValues = false;
     }
 
     if (checkMessageValue(messageValue) === true) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
+        hasTrueValues = false;
     }
 
     // let allGood = true;
@@ -80,7 +91,7 @@ function formValidation(event) {
     //     console.log("nay")
     //     allGood = false
     // }
-    
+
 
     // if (emailValue === true) {
     //     console.log("YaY")
@@ -88,23 +99,31 @@ function formValidation(event) {
     //     console.log("nay")
     //     allGood = false
     // }
-    
+
     // if (messageValue === true) {
     //     console.log("YaY")
     // } else {
     //     console.log("nay")
     //     allGood = false
     // }
-    
+
     // if (allGood === true){
     //     alert("Everything submitted correctly")
     // } else {
     //     alert("Something is not correct")
     // }
 
+
+    if (hasTrueValues) {
+
+        document.querySelector("#form").reset();
+        // TODO - SOMETHING ELSE THAN ALERT?
+        alert("Your form was submitted successfully!");
+    }
 }
 
-function hideErrorMessage(firstNameValue, emailValue, messageValue){
+
+function hideErrorMessage(firstNameValue, emailValue, messageValue) {
     document.querySelector("#firstNameError") = "block";
 }
 
