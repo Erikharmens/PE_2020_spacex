@@ -24,14 +24,16 @@ fetch(spacexApiUrl)
             if (jsonLaunchDate.getTime() == correctNextLaunchDate.getTime()) {
 
                 // Creates a string to get a cusomised date preview instead of showing the ISO date
-                const isoDateFixed = "" + jsonLaunchDate.getDate() + "/" + (jsonLaunchDate.getMonth() + 1) + "/" + jsonLaunchDate.getFullYear();
+                const isoDateFixed = "" + jsonLaunchDate.getDate() + " / " + (jsonLaunchDate.getMonth() + 1) + " / " + jsonLaunchDate.getFullYear();
 
                 // Add to HTML
                 html += `<div class="countdowntimer">
-                        <h4>Next Launch:</h4>
-                        <h1 class="upcomingrocket">-${json[i].mission_name}-</h1>
-                        <h4>Estimated launch date:</h4>
-                        <h5 class="rockettimer">${isoDateFixed}</h5>
+                            <h4>Next SpaceX Launch:</h4>
+                            <a class="linkToWeb" alt="Launch Schedule" href="https://spaceflightnow.com/launch-schedule">
+                                <h1 class="upcomingrocket">${json[i].mission_name}</h1>
+                            </a>
+                             <h4>Estimated launch date:</h4>
+                             <h5 class="rockettimer">${isoDateFixed}</h5>
                         </div>`
 
                 countdownElement.innerHTML = html;

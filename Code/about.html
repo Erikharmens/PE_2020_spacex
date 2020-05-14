@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/navbar.css">
     <title>About SpaceX</title>
@@ -27,11 +28,12 @@
     <div class="abouttextsection">
         <div class="aboutTextTitle">
             <h1>About SpaceX</h1>
+            
         </div>
         <div class="aboutTextBody">
             <p>SpaceX is a private company founded in 2002 by Elon Musk to revolutionise <br> space technology, with the
                 ultimate goal of enabling people to live on other planets.</p>
-            <hr>
+            <hr class="aboutHr">
             <p>As one of the world’s fastest growing providers of launch services, SpaceX has secured over 100 missions
                 to its manifest, representing over $12 billion on contract. These include commercial satellite launches
                 as well as US government missions. SpaceX’s Dragon spacecraft is flying numerous cargo resupply missions
@@ -41,9 +43,10 @@
             <p>Building on the achievements of Falcon 9 and Falcon Heavy, SpaceX is working on a next generation of
                 fully reusable launch vehicles that will be the most powerful ever built, capable of carrying humans to
                 Mars and other destinations in the solar system.</p>
-            <hr>
+                <p>Find out more about SpaceX here:<br> <a class="aboutSpacexLink" href="https://www.spacex.com/about">www.spacex.com/about</a></p>
+                <hr class="aboutHr">
             <div class="aboutTextTitle">
-                <h1>Contact Form</h1>
+                <h1>Contact Us</h1>
                 <p></p>
             </div>
         </div>
@@ -83,7 +86,7 @@
                 <p>*Message required</p>
                 <div class="form-error" id="messageError">Your message must be at least 10 characters long</div>
                 <textarea id="message" name="message" required
-                    placeholder="Do you have any questions, feedback or concerns? We would love to hear it!"></textarea>
+                    placeholder="Do you have any questions, feedback or concerns? We would love to hear from you!"></textarea>
                 <input type="submit" class="submitbutton" value="Send">
                 <!-- <button type="submit" class="submittbutton" id="submit">Send</button> -->
             </form>

@@ -28,6 +28,9 @@ body {
     font-size: 24px;
     font-family: advent;
 }
+.historyTitle p {
+    font-family: geosans;
+}
 
 .historycontainer {
     display: block;
@@ -43,13 +46,13 @@ body {
     /* background-color: orange; */
 }
 
-/* ----- CARDS W INFO FROM API CALL ----- */
+/* ----- CARDS WITH CONTENT FROM API CALL ----- */
 .historycards {
-    background-color: #dcdcdc;
+    background-color: #cccccc;
     margin-top: 50px;
     margin-bottom: 15px;
     border-radius: 15px;
-    border: 3px solid #efefef;
+    border: 3px solid #ffffff;
     padding: 30px;
     color: #262626;
     text-align: center;
@@ -70,6 +73,7 @@ body {
 .historyDate {
     color: #0071BC;
     font-family: geosans;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
 }

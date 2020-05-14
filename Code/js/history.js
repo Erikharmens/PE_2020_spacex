@@ -16,7 +16,7 @@ fetch(historyUrl)
 
             jsonLaunchDate = new Date(json[i].event_date_utc);
 
-            const isoDateFixed = "" + jsonLaunchDate.getDate() + "/" + (jsonLaunchDate.getMonth() + 1) + "/" + jsonLaunchDate.getFullYear();
+            const isoDateFixed = "" + jsonLaunchDate.getDate() + " / " + (jsonLaunchDate.getMonth() + 1) + " / " + jsonLaunchDate.getFullYear();
 
 
 

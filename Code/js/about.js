@@ -118,7 +118,7 @@ function formValidation(event) {
 
         document.querySelector("#form").reset();
         // TODO - SOMETHING ELSE THAN ALERT?
-        alert("Your form was submitted successfully!");
+        alert("Your form was submitted successfully! Don't worry, this is doesn't send anything or store any data. If you want to contact SpaceX directly, go to their website: https://www.spacex.com/about ");
     }
 }
 

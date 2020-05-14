@@ -6,8 +6,6 @@ body {
     /* overflow: hidden; */
     height: 100%;
     color: rgb(222, 222, 222);
-
-
 }
 
 
@@ -28,6 +26,8 @@ body {
 
 .countdowntimer {
     text-align: center;
+    margin: auto;
+    width: 50%;
     font-size: 30px;
     padding-top: 16px;
     /* padding-top: 30px;
@@ -37,26 +37,30 @@ body {
 }
 
 .countdowntimer .rockettimer {
-    color: orange;
+    color: #0071BC;
     font-size: 28px;
     margin-top: 8px;
 }
 
 @keyframes pulse {
     0% {
-        color: rgb(64, 122, 197);
+        color: rgb(218, 218, 218);
     }
 
-    40% {
-        color: rgb(76, 162, 165);
+    30% {
+        color: rgb(108, 146, 172);
     }
 
-    80% {
-        color: rgb(82, 180, 95);
+    50% {
+        color: #0071BC;
+    }
+
+    70% {
+        color: rgb(108, 146, 172);
     }
 
     100% {
-        color: rgb(64, 122, 197);
+        color: rgb(218, 218, 218);
     }
 }
 
@@ -69,18 +73,24 @@ body {
     margin: 0px;
     margin-top: 0.5em;
     color: #efefef;
+    font-size: 24px;
     /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
 
 }
 
+/* ----- LAUNCH NAME - LINK TO LAUNCHES SCHEDULE ----- */
+.linkToWeb {
+    text-decoration: none;
+}
 
 
 .upcomingrocket {
     padding-top: 0px;
+    font-size: 100px;
     color: #0071BC;
     text-decoration: none;
     /* animation: pulse 5s infinite;  PULSATING COLORCHANGE ANIMATION */
-    /* animation: pulse 5s infinite; */
+    animation: pulse 10s infinite;
 }
 
 .upcomingrocket h1 {
@@ -148,4 +158,8 @@ a :hover {
     height: 1600px;
 
     float: center;
+}
+
+.topearth h4 {
+    margin: 0;
 }
