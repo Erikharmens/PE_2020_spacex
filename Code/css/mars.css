@@ -7,11 +7,6 @@ body {
 }
 
 
-.marscontainer {
-    margin: 0;
-    width: 60%;
-}
-
 
 .marsmission {
     padding-top: 160px;
@@ -68,4 +63,36 @@ body {
 .linkToMars {
     font-size: 24px;
     color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        /* CHANGE BACKGROUND ? */
+        background-image: url(../images/fullmarspage1noring.jpg);
+        background-size: 100%;
+    }
+    .marsmission {
+        padding-top: 140px;
+        padding-left: 0;
+        width: 80%;
+        margin: auto;
+        /* color: #CE5A32; */
+        color: #e9e9e9;
+        text-align: center;
+    }
+    .marsmission p {
+        font-size: 20px;
+    }
+    .marsmission h1 {
+        padding-top: 34px;
+        font-size: 36px;
+    }
+    .importantMarsInfo h1 {
+        font-size: 24px;
+    }
+    .importantMarsInfo p {
+        font-size: 16px;
+    }
 }

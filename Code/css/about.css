@@ -152,7 +152,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #488838;
-    color: whitesmoke;
+    color: #e9e9e9;
 }
 
 
@@ -202,19 +202,46 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 600px) {
-
     body {
         background-image: url(../images/aboutspacex.jpg);
+        background-position-y: 50px;
         background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: #040811;
-        height: auto;
-        font-family: geosans;
     }
-
     .abouttextsection {
         width: 80%;
     }
-
+    .abouttextsection h1 {
+        font-size: 36px;
+    }
+    .abouttextsection p {
+        color: #e9e9e9;
+        font-size: 20px;
+    }
+    .contactfieldcontent {
+        width: 100%;
+    }
+    .container {
+        padding: 10px;
+    }
+    input[type=text],
+    select,
+    textarea {
+        width: 80%;
+        padding: 20px;
+    }
+    .submitbutton {
+        font-size: 18px; 
+    }
+    #region {
+        width: 60%;
+        font-size: 14px;
+    }
+    #emailaddress,
+    #firstname, #message {
+        font-size: 14px;
+    }
+    .form-error {
+        font-size: 20px;
+    }
 
 }

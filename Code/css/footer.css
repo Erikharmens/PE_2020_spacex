@@ -45,21 +45,20 @@
 
 /* ----- MEDIA QUERY FOOTER FOR MOBILE ----- */
 @media screen and (max-width: 600px) {
-    
     .spacexFooter {
         margin-bottom: 0px;
         margin-top: 40px;
         width: 80%; 
     }
-
     .footerText {
         padding-bottom: 20px;
     }
-
+    .footerText h5 {
+        margin-bottom: 5px;
+    }
    .footerNav {
        padding: 0;
    }
-
    .footerNav a {
        text-align: center;
        margin-left: 5px;

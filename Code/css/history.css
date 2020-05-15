@@ -3,7 +3,6 @@ body {
     background-color: #040811;
     /* overflow: hidden; */
     height: 100%;
-    color: whitesmoke;
 }
 
 /* ----- FONTS ----- */
@@ -31,6 +30,10 @@ body {
     font-family: advent;
     color: #0071BC;
 }
+
+.historyTitle h1 {
+    font-size: 48px;
+}
 .historyTitle p {
     color: #e9e9e9;
     font-family: geosans;
@@ -42,7 +45,6 @@ body {
     margin: auto;
     width: 40%;
     margin-top: 6px;
-    background-color: rgb(131, 211, 115) hidden;
     height: max-content;
     flex-wrap: wrap;
 
@@ -102,4 +104,32 @@ body {
 hr {
     border: 0.5px solid rgb(161, 161, 161);
     width: 50%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .historyTitle {
+        width: 80%;
+        font-size: 20px;
+    }
+    .historyTitle h1 {
+        font-size: 36px;
+    }
+    .historycontainer {
+        width: 90%;
+    }
+    .historycards {
+        margin-top: 24px;
+        padding: 20px;
+    }
+    .toTopLink {
+        text-align: center;
+        margin: auto;
+        width: 94%;
+        margin-top: 6px;
+    }
+    hr {
+        width: 80%;
+    }
 }

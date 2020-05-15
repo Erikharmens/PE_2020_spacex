@@ -98,8 +98,16 @@ body {
     color: #0071BC;
 }
 
+/* FIX POSITIONING MARS EARTH HERE */
+.topearth {
+    height: 190vh;
 
+    float: center;
+}
 
+.topearth h4 {
+    margin: 0;
+}
 
 .marsmission {
     display: block;
@@ -111,7 +119,17 @@ body {
     color: #CE5A32;
 
 }
+.marsmission h1 {
+    margin: 40px;
+    font-size: 40px;
+    font-family: advent;
+    color: #CE5A32;
+}
 
+.marsmission hr {
+    border: 2px solid #CE5A32;
+    width: 65%;
+}
 .marsmission a,
 a :hover {
     text-decoration: none;
@@ -128,17 +146,7 @@ a :hover {
     font-size: 24px;
 }
 
-.marsmission h1 {
-    margin: 40px;
-    font-size: 40px;
-    font-family: advent;
-    color: #CE5A32;
-}
 
-.marsmission hr {
-    border: 2px solid #CE5A32;
-    width: 65%;
-}
 
 .buttontomars {
     text-align: center;
@@ -150,15 +158,7 @@ a :hover {
     width: 15%;
 }
 
-.topearth {
-    height: 1600px;
 
-    float: center;
-}
-
-.topearth h4 {
-    margin: 0;
-}
 
 
 
@@ -170,12 +170,61 @@ a :hover {
 
     body {
         background-image: url(../images/frontpage_new_12.05.jpg);
-        background-size: 150%;
-        background-position-y: 20%;
-        height: 100%;
-        color: rgb(222, 222, 222);
+        background-size: 100%;
+        background-position-y: 35%;
+    }
+    .countdowntimer {
+        width: 100%;
+    }
+    .countdowntimer .rockettimer {
+        color: #e9e9e9;
+        font-size: 24px;
     }
 
+    .countdowntimer h4 {
+        margin: 0px;
+        margin-top: 0.5em;
+        color: #efefef;
+        font-size: 24px;
+        /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
+    
+    }
+
+    .upcomingrocket {
+        padding: 0px;
+        font-size: 80px;
+        /* animation: pulse 5s infinite;  PULSATING COLORCHANGE ANIMATION */
+        animation: pulse 10s infinite;
+    }
+    .topearth {
+        height: 90vh;
+    
+        float: center;
+    }
+    
+    .marsmission {
+        padding-top: 0;
+        width: 80%;
+        font-weight: bold;
+
+    }
+    .marsmission h1 {
+        margin: 0;
+        font-size: 36px;
+        font-family: advent;
+        color: #CE5A32;
+    }
+    .buttontomars img {
+        width: 35%;
+    }
+
+    .marsmissiontext {
+        font-size: 20px;
+    }
+    .marsmission hr {
+        border: 1px solid #CE5A32;
+        width: 80%;
+    }
 
 
 
