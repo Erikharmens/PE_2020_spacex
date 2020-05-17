@@ -8,7 +8,7 @@ body {
     color: #e9e9e9;
 }
 
-
+/* ----- FONTS ----- */
 @font-face {
     font-family: 'advent';
     src: url(/fonts/advent-Re.otf);
@@ -33,7 +33,6 @@ body {
     /* padding-top: 30px;
     padding-bottom: 500px; */
     font-family: advent;
-
 }
 
 .countdowntimer .rockettimer {
@@ -72,17 +71,14 @@ body {
 .countdowntimer h4 {
     margin: 0px;
     margin-top: 0.5em;
-    color: #efefef;
+    color: #e9e9e9;
     font-size: 24px;
-    /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
-
 }
 
 /* ----- LAUNCH NAME - LINK TO LAUNCHES SCHEDULE ----- */
 .linkToWeb {
     text-decoration: none;
 }
-
 
 .upcomingrocket {
     padding: 10px;
@@ -101,7 +97,6 @@ body {
 /* FIX POSITIONING MARS EARTH HERE */
 .topearth {
     height: 190vh;
-
     float: center;
 }
 
@@ -117,8 +112,8 @@ body {
     padding-top: 100px;
     /* color: #efefef; */
     color: #CE5A32;
-
 }
+
 .marsmission h1 {
     margin: 40px;
     font-size: 40px;
@@ -130,6 +125,7 @@ body {
     border: 2px solid #CE5A32;
     width: 65%;
 }
+
 .marsmission a,
 a :hover {
     text-decoration: none;
@@ -140,13 +136,10 @@ a :hover {
     font-size: 24px;
 }
 
-
 .marsmission h5 {
     margin: 25px;
     font-size: 24px;
 }
-
-
 
 .buttontomars {
     text-align: center;
@@ -158,16 +151,8 @@ a :hover {
     width: 15%;
 }
 
-
-
-
-
-
-
-
-/* ----- MEDIA QUERY ----- */
+/* ----- MEDIA QUERY MOBILE ----- */
 @media screen and (max-width: 600px) {
-
     body {
         background-image: url(../images/frontpage_new_12.05.jpg);
         background-size: 100%;
@@ -180,7 +165,6 @@ a :hover {
         color: #e9e9e9;
         font-size: 24px;
     }
-
     .countdowntimer h4 {
         margin: 0px;
         margin-top: 0.5em;
@@ -189,19 +173,15 @@ a :hover {
         /* NEXT LAUNCH & ESTIMATED LAUNCH DATE TEXT-COLOR */
     
     }
-
     .upcomingrocket {
         padding: 0px;
         font-size: 80px;
-        /* animation: pulse 5s infinite;  PULSATING COLORCHANGE ANIMATION */
         animation: pulse 10s infinite;
     }
     .topearth {
         height: 90vh;
-    
         float: center;
     }
-    
     .marsmission {
         padding-top: 0;
         width: 80%;
@@ -217,7 +197,6 @@ a :hover {
     .buttontomars img {
         width: 35%;
     }
-
     .marsmissiontext {
         font-size: 20px;
     }
@@ -225,10 +204,4 @@ a :hover {
         border: 1px solid #CE5A32;
         width: 80%;
     }
-
-
-
-
-
-
 }

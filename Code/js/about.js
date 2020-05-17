@@ -8,7 +8,7 @@ function checkInputValue(value) {
         return false;
     }
 }
-
+// Make sure message field contains atleast 10 characters
 function checkMessageValue(value) {
     const trimmedValue = value.trim();
 
@@ -19,8 +19,10 @@ function checkMessageValue(value) {
     }
 }
 
+// Selecting div in html
 const form = document.querySelector("#form");
 
+// Adding eventlistner to submit button and validation function
 form.addEventListener("submit", formValidation);
 
 function formValidation(event) {
@@ -50,6 +52,9 @@ function formValidation(event) {
     const messageError = document.querySelector("#messageError");
     const messageValue = message.value;
 
+
+    // ----- This one bugged out... ----- //
+
     // // Check input value for first name is > 0
     // if (checkInputValue(firstNameValue) === true) {
     //     firstNameError.style.display = "none";
@@ -57,8 +62,8 @@ function formValidation(event) {
     //     firstNameError.style.display = "block";
     // }
 
+    // Making sure the input values are correctly to create a validation confirmation
     let hasTrueValues = true;
-
 
     // Check input value for email is > 0
     if (checkInputValue(emailValue) === true) {
@@ -68,7 +73,7 @@ function formValidation(event) {
         hasTrueValues = false;
     }
 
-    // Check
+    // Check if email follows regex
     if (validateEmail(emailValue) === true) {
         emailInvalidError.style.display = "none";
     } else {
@@ -76,6 +81,7 @@ function formValidation(event) {
         hasTrueValues = false;
     }
 
+    // Check if message field have any value/inputs
     if (checkMessageValue(messageValue) === true) {
         messageError.style.display = "none";
     } else {
@@ -83,37 +89,7 @@ function formValidation(event) {
         hasTrueValues = false;
     }
 
-    // let allGood = true;
-    // allGood - TESTING - REMOVE?
-    // if (firstNameValue === true) {
-    //     console.log("YaY")
-    // } else {
-    //     console.log("nay")
-    //     allGood = false
-    // }
-
-
-    // if (emailValue === true) {
-    //     console.log("YaY")
-    // } else {
-    //     console.log("nay")
-    //     allGood = false
-    // }
-
-    // if (messageValue === true) {
-    //     console.log("YaY")
-    // } else {
-    //     console.log("nay")
-    //     allGood = false
-    // }
-
-    // if (allGood === true){
-    //     alert("Everything submitted correctly")
-    // } else {
-    //     alert("Something is not correct")
-    // }
-
-
+    // If confirmation is success - display/alert something and also reset the contact form
     if (hasTrueValues) {
 
         document.querySelector("#form").reset();
@@ -122,23 +98,15 @@ function formValidation(event) {
     }
 }
 
-
+// Making sure form-error text appears when it needs to
 function hideErrorMessage(firstNameValue, emailValue, messageValue) {
     document.querySelector("#firstNameError") = "block";
 }
 
 
+// Making sure email follows the correct regex
 function validateEmail(email) {
     event.preventDefault();
     const regEx = /\S+@\S+\.\S+/;
     return regEx.test(email);
 }
-
-//  function showErrorMessage(){
-//      const errorMessage = document.querySelector(".form-error")
-//      if (errorMessage.style.display === "none") {
-//        errorMessage.style.display = "block";
-//      } else {
-//        errorMessage.style.display = "none";
-//      }
-//    }

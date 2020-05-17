@@ -1,3 +1,4 @@
+// Base url for API
 const spacexApiUrl = "https://api.spacexdata.com/v3/launches/upcoming";
 
 fetch(spacexApiUrl)

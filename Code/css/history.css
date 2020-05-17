@@ -20,7 +20,7 @@ body {
     font-weight: 100;
 }
 
-
+/* ----- TOP TITLE HISTORY PAGE ----- */
 .historyTitle {
     margin: auto;
     width: 50%;
@@ -41,15 +41,12 @@ body {
 
 .historycontainer {
     display: block;
-    /* text-align: center; */
     margin: auto;
     width: 40%;
     margin-top: 6px;
     height: max-content;
     flex-wrap: wrap;
-
     padding: 10px;
-    /* background-color: orange; */
 }
 
 /* ----- CARDS WITH CONTENT FROM API CALL ----- */
