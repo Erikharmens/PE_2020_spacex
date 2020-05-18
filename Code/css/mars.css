@@ -16,14 +16,14 @@ hr {
 /* ----- FONTS ----- */
 @font-face {
     font-family: 'advent';
-    src: url(/fonts/advent-Re.otf);
+    src: url(../fonts/advent-Re.otf);
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
     font-family: "geosans";
-    src: url(/fonts/GeosansLight.ttf);
+    src: url(../fonts/GeosansLight.ttf);
     font-style: normal;
     font-weight: 100;
 }
