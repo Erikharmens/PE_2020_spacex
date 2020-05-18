@@ -27,7 +27,7 @@ body {
 .countdowntimer {
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 70%;
     font-size: 30px;
     padding-top: 10px;
     /* padding-top: 30px;
@@ -82,7 +82,7 @@ body {
 
 .upcomingrocket {
     padding: 10px;
-    font-size: 100px;
+    font-size: 70px;
     color: #0071BC;
     text-decoration: none;
     /* animation: pulse 5s infinite;  PULSATING COLORCHANGE ANIMATION */
@@ -175,7 +175,7 @@ a :hover {
     }
     .upcomingrocket {
         padding: 0px;
-        font-size: 80px;
+        font-size: 50px;
         animation: pulse 10s infinite;
     }
     .topearth {
